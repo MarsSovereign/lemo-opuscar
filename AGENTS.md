@@ -80,6 +80,14 @@ All 66 styles · 全部风格:
 
 Report progress in the user's language. If a step fails, read the error, fix the cause and retry; go back to the user only for a decision or something only they can provide.
 
+## On Mars's PC (Windows) and with OpenMontage
+
+This fork adds `mars/` (read [`mars/README.md`](mars/README.md) before running anything there). It wins over the guides wherever they name a command:
+- No `sh`: `python mars/setup.py deps`, `python mars/build.py <film>` (instead of a `build.sh`), `python mars/mux.py`, `python mars/fetch.py`; the venv's Python is `.venv\Scripts\python.exe`.
+- Voice from the local TTS service (IndexTTS2.5 / CosyVoice3): `mars/tts_local.py`, checked with `mars/asr.py`; same files as `core/tts/`.
+- ComfyUI on :8189 for plates, music and clips: `mars/comfy.py`, `mars/gen_images.py`, `mars/media.py` + `/mars/web/clip.js`.
+- Inside OpenMontage the film is `render_runtime: "lemo-opuscar"`: its stages and approval gates govern the order; these guides govern the film.
+
 ## Where things go
 
 - The film's project folder is `films/<name>/` in a clone (ignored by git), or `<name>/` in the user's folder in skill mode (see the skill's `SKILL.md`). Wherever a guide says `films/<name>/`, read "the project folder". Work only there, unless the user asks you to work in their own project.

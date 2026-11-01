@@ -1,0 +1,21 @@
+{
+ "_what": "Qwen-Image 2.1 text-to-image plates (8-step turbo).",
+ "workflow": "H:/ComfyUI-aki-v3.2/ComfyUI/user/default/workflows/Qwen21/MarsXClaude/<导出的API版>.json",
+ "slots": {
+  "prompt": "<id>.text",
+  "seed": "<id>.seed",
+  "width": "<id>.width",
+  "height": "<id>.height"
+ },
+ "random": [
+  "seed"
+ ],
+ "defaults": {
+  "width": 1344,
+  "height": 768
+ },
+ "outputs": [
+  "<SaveImage id>"
+ ],
+ "_how": "On the PC: export the workflow with Workflow → Export (API), run `python mars/comfy.py slots <that file>`, put the node ids here, save as qwen21_t2i.json (without .example)."
+}

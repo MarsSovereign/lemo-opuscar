@@ -1,0 +1,11 @@
+{
+  "_note": "Copy to mars/config.json on each machine (it is not committed). Environment variables override these: LEMO_TTS_URL, LEMO_TTS_VOICE, LEMO_COMFY_URL, WHISPER_MODEL, OPENMONTAGE_DIR, LEMO_FFMPEG, LEMO_FFPROBE. whisper_python: an interpreter that has faster-whisper (empty = the library .venv).",
+  "tts_url": "http://127.0.0.1:9880",
+  "tts_voice": "",
+  "comfy_url": "http://127.0.0.1:8189",
+  "whisper_model": "H:\\win-ai\\whisper\\models\\faster-whisper-large-v3-turbo",
+  "whisper_python": "",
+  "openmontage_dir": "H:\\win-ai\\OpenMontage",
+  "ffmpeg": "ffmpeg",
+  "ffprobe": "ffprobe"
+}

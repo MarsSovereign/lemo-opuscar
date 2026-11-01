@@ -1,0 +1,17 @@
+{
+ "_what": "MiniMax Music3 score from a style prompt (+ optional lyrics). Convert the result with mars/media.py wav before mixing.",
+ "workflow": "H:/ComfyUI-aki-v3.2/ComfyUI/user/default/workflows/MiniMaxMusic3/MarsXClaude/<导出的API版>.json",
+ "slots": {
+  "prompt": "<id>.<input>",
+  "lyrics": "<id>.<input>",
+  "duration": "<id>.<input>",
+  "seed": "<id>.seed"
+ },
+ "random": [
+  "seed"
+ ],
+ "outputs": [
+  "<SaveAudio id>"
+ ],
+ "_how": "On the PC: export the workflow with Workflow → Export (API), run `python mars/comfy.py slots <that file>`, put the node ids here, save as minimax_music3.json (without .example)."
+}

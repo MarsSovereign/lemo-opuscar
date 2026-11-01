@@ -1,0 +1,20 @@
+{
+ "_what": "H3 image-to-video for a shot that must be real footage; extract with mars/media.py frames before the page uses it.",
+ "workflow": "H:/ComfyUI-aki-v3.2/ComfyUI/user/default/workflows/MinimaxH3/MarsXClaude/<导出的API版>.json",
+ "slots": {
+  "prompt": "<id>.text",
+  "image": "<LoadImage id>.image",
+  "seed": "<id>.seed",
+  "length": "<id>.length"
+ },
+ "uploads": [
+  "image"
+ ],
+ "random": [
+  "seed"
+ ],
+ "outputs": [
+  "<SaveVideo id>"
+ ],
+ "_how": "On the PC: export the workflow with Workflow → Export (API), run `python mars/comfy.py slots <that file>`, put the node ids here, save as h3_i2v.json (without .example)."
+}
